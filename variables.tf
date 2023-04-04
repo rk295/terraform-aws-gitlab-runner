@@ -343,6 +343,12 @@ variable "runners_output_limit" {
   default     = 4096
 }
 
+variable "runners_tls_verify" {
+  description = "Enables tls verification for the runners."
+  type        = bool
+  default     = false
+}
+
 variable "userdata_pre_install" {
   description = "User-data script snippet to insert before GitLab runner install"
   type        = string
